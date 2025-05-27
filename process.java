@@ -86,8 +86,10 @@ public class process extends Likes {
                 System.out.println("\ncomments: ");
                 if(p.comments_list.isEmpty())
                     System.out.println("comments are not added");
-                for (String c : p.comments_list)
-                    System.out.println(" -> "+c);
+                else {
+                    for (String c : p.comments_list)
+                        System.out.println(" -> " + c);
+                }
             }
         }
     }

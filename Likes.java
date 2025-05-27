@@ -9,7 +9,7 @@ public class Likes {
         System.out.println("1.) likes \n2.) dislike\n3.) skip");
         Scanner scanner=new Scanner(System.in);
         int input=scanner.nextInt();
-        if(input==1 && !post.liked_user_list.contains(user.name)){
+        if(input==1 && (post.liked_user_list==null || !post.liked_user_list.contains(user.name))){
             post.liked_user_list.add(user.name);
             post.likes++;
             boolean flag=post.disliked_user_list.remove(user.name);

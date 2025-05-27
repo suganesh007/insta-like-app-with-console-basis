@@ -37,8 +37,9 @@ public class Main {
                         case 1: {
                             boolean post_availability=process.showHeading();
                             if(post_availability) {
-                                sc.nextLine();
-                                String head = sc.nextLine();
+                                Scanner scan=new Scanner(System.in);
+                                String head = scan.nextLine();
+
                                 process.printPost(head);
                                 // likes added not completed yet
                                 process.likes();
